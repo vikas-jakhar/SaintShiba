@@ -614,7 +614,7 @@ th {
     width: 0%;
     bottom: -5px;
     display: flex;
-    height: 1px;
+    height: 2px;
     background: linear-gradient(to left, #FFFFFF, #FFA800);
     left: 0%;
     transition: all 0.3s linear;
