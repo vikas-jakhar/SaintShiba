@@ -78,7 +78,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: blue;
+    background-color: #FFA800;
     border-radius: 20px;
 }
 
@@ -182,7 +182,6 @@
 
 .section-3 {
     background-color: #1D1A1A;
-    min-height: 100vh;
 }
 
 .color-b6 {
@@ -289,7 +288,6 @@
     border: 1px solid #474646;
     border-radius: 10px;
     margin-top: 24px;
-    padding: 25px;
 }
 
 table tr td,
@@ -314,7 +312,7 @@ th {
 .table-1 {
     width: 1320px;
     position: relative;
-    left: -3%;
+    left: 0%;
 }
 
 .font-s-36 {
@@ -631,6 +629,13 @@ th {
     right: 0%;
 }
 
+.ellipse7 {
+    top: 10%;
+    left: 10%;
+    height: 30%;
+    width: 30%;
+}
+
 
 
 
@@ -746,16 +751,48 @@ th {
     .pl-lg-0 {
         padding-left: 0px;
     }
+
+    .text-33 {
+        font-size: 15px;
+    }
 }
 
 @media (min-width:1200px) {
     .img-box {
         height: fit-content;
     }
+
+    .box-1 {
+        top: -180px;
+    }
+
+    .text-33 {
+        font-size: 18px;
+    }
+
+    .left-box {
+        padding-left: 40%;
+    }
+
+    .right-box {
+        padding-right: 40%;
+    }
 }
 
 @media (min-width:1400px) {
     .table-box {
         overflow-x: visible;
+    }
+
+    .table-1 {
+        left: -3px;
+    }
+
+    .left-box {
+        padding-left: 50%;
+    }
+
+    .right-box {
+        padding-right: 50%;
     }
 }
