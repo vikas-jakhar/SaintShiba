@@ -39,6 +39,7 @@
     font-weight: 400;
     line-height: 32.4px;
     color: #FFFFFF;
+    transition: all 0.3s linear;
 }
 
 .btn-1 {
@@ -157,8 +158,6 @@
     display: flex;
     position: relative;
     z-index: 10;
-    height: 16px;
-    width: 18px;
 }
 
 .line-1 {
@@ -398,10 +397,6 @@ th {
     border-radius: 10px;
 }
 
-/* .accordion-flush>.accordion-item:first-child {
-    border: 2px solid #404040;
-} */
-
 .accordion-flush>.accordion-item:nth-child(even) {
     border: 2px solid #404040;
     border-radius: 10px;
@@ -452,6 +447,187 @@ th {
 
 .g155 {
     bottom: 0%;
+    right: 0%;
+}
+
+.list-text {
+    position: relative;
+}
+
+.list-text:hover {
+    background-image: linear-gradient(to left, #FFA800, #F06500);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.hamburger {
+    padding: 15px;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.hamburger__container {
+    width: 36px;
+    height: 24px;
+    position: relative;
+}
+
+.hamburger:hover .hamburger__inner {
+    transform: translate(-51px, 50%);
+    opacity: 0;
+}
+
+.hamburger:hover .hamburger__inner::before,
+.hamburger:hover .hamburger__inner::after {
+    transform: translate(102px, 0);
+    opacity: 0;
+}
+
+.hamburger.is-active .hamburger__inner {
+    display: none;
+}
+
+.hamburger__inner {
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 4px;
+    position: absolute;
+    transition-property: transform, opacity;
+    transition-timing-function: ease;
+    transition-duration: 0.4s;
+    top: 50%;
+    transform: translate(5px, -50%);
+    opacity: 1;
+}
+
+.hamburger__inner::before,
+.hamburger__inner::after {
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 4px;
+    position: absolute;
+    transition-property: transform, opacity;
+    transition-timing-function: ease;
+    transition-duration: 0.4s;
+    content: "";
+    opacity: 1;
+    transform: translate(-5px, 0);
+}
+
+.hamburger__inner::before {
+    top: -13px;
+}
+
+.hamburger__inner::after {
+    top: 13px;
+}
+
+.hamburger:hover .hamburger__hidden {
+    opacity: 1;
+    transform: translate(0, -50%);
+}
+
+.hamburger:hover .hamburger__hidden::before,
+.hamburger:hover .hamburger__hidden::after {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.hamburger.is-active .hamburger__hidden {
+    opacity: 1;
+    transform: rotate(45deg);
+}
+
+.hamburger.is-active .hamburger__hidden::before {
+    transform: translate(0, 13px) rotate(90deg);
+    transform-origin: center;
+}
+
+.hamburger.is-active .hamburger__hidden::after {
+    transform-origin: center;
+    transform: translate(0, -13px) rotate(0);
+}
+
+.hamburger__hidden {
+    opacity: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 4px;
+    position: absolute;
+    transition-property: transform, opacity;
+    transition-timing-function: ease;
+    transition-duration: 0.4s;
+    background-color: red;
+    top: 50%;
+    transform: translate(51px, -50%);
+}
+
+.hamburger__hidden::before,
+.hamburger__hidden::after {
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 4px;
+    position: absolute;
+    transition-property: transform, opacity;
+    transition-timing-function: ease;
+    transition-duration: 0.4s;
+    background-color: red;
+    content: "";
+    transform: translate(102px, 0);
+}
+
+.hamburger__hidden::before {
+    top: -13px;
+}
+
+.hamburger__hidden::after {
+    top: 13px;
+}
+
+.list-text {
+    position: relative;
+}
+
+.list-text::before {
+    content: '';
+    position: absolute;
+    width: 0%;
+    top: -3px;
+    height: 2px;
+    display: flex;
+    right: 0%;
+    transition: all 0.3s linear;
+    border-radius: 10px;
+    background: linear-gradient(to left, #F06500, #FFFFFF);
+}
+
+.list-text::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    bottom: -5px;
+    display: flex;
+    height: 1px;
+    background: linear-gradient(to left, #FFFFFF, #FFA800);
+    left: 0%;
+    transition: all 0.3s linear;
+    border-radius: 10px;
+}
+
+.list-text:hover::after {
+    left: 0%;
+    width: 100%;
+}
+
+.list-text:hover::before {
+    width: 100%;
     right: 0%;
 }
 
