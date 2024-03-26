@@ -430,6 +430,22 @@ th {
     color: #B8B8B8;
 }
 
+.g153 {
+    top: 50%;
+    right: 0%;
+    transform: translateY(-50%);
+}
+
+.g154 {
+    top: 50%;
+    left: 0%;
+}
+
+.g155 {
+    bottom: 0%;
+    right: 0%;
+}
+
 
 
 
