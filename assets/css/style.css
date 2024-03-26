@@ -9,7 +9,7 @@
 }
 
 .menu {
-    height: 100px;
+    height: 75px;
     position: fixed;
     background-color: #000000BF;
     z-index: 7;
@@ -417,7 +417,7 @@ th {
 }
 
 .accordion-button:not(.collapsed)::after {
-    background-image: url(../svg/bx_bx-chevron-up.png);
+    background-image: url(../svg/bx_bx-chevron-down.png);
 }
 
 .accordion-button:not(.collapsed) {
