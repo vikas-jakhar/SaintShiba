@@ -612,7 +612,7 @@ th {
     content: '';
     position: absolute;
     width: 0%;
-    bottom: -5px;
+    bottom: -7px;
     display: flex;
     height: 2px;
     background: linear-gradient(to left, #FFFFFF, #FFA800);
